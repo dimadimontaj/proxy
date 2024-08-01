@@ -10,7 +10,7 @@
     update_cache: yes
 
 - name: copy squid config
-  copy:
+  template:
     src: squid.conf.j2
     dest: "/etc/squid/squid.conf"
   notify: restart squid
