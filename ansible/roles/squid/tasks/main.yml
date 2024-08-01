@@ -6,6 +6,7 @@
     name:
       - squid
       - apache2-utils
+      - python3-pip
     state: present
     update_cache: yes
 
@@ -20,6 +21,11 @@
     name: squid
     state: started
     enabled: true
+
+- name: install passlib for htpasswd
+  pip:
+    name: passlib
+    state: present
 
 - name: create admin accaunt
   community.general.htpasswd:
