@@ -1,0 +1,10 @@
+---
+# defaults file for squid
+
+#config squid
+http_port: 50444
+
+
+#admins cred
+user: admin
+password: 12345678
