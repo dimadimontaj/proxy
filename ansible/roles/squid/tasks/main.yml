@@ -29,7 +29,7 @@
 
 - name: create admin accaunt
   community.general.htpasswd:
-    path: etc/squid/passwd
+    path: /etc/squid/passwd
     name: "{{ username }}"
     password: "{{ password }}"
     state: present
