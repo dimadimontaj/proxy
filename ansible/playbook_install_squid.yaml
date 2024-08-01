@@ -1,0 +1,5 @@
+- name: install and config squid
+  hosts: aeza
+  become: yes
+  roles:
+    - role: squid
